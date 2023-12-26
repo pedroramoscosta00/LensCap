@@ -1,0 +1,318 @@
+body {
+    color: #353535;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*__________________Navbar__________________*/
+.navbar {
+    background-color: #1BA857;
+    margin-bottom: 3em;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #E7C2DD;
+}
+
+.navbar a:hover {
+    transition: 0.2s ease-in;
+    color: white;
+}
+
+.navbar p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar img {
+    margin-left: 3em;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    margin-right: 3em;
+}
+
+.search-input {
+    display: none;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.search-input.active {
+    display: inline;
+    opacity: 1;
+    height: auto;
+    width: auto;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 0.8em;
+    background: white;
+}
+
+
+
+
+
+
+.parent-movies {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+}
+
+.title-movies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.title-movies a {
+    text-decoration: none;
+    color: #353535;
+}
+
+.parent-movies h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.movies {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.movies2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.movies3 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.movie-item {
+    width: 22.5em;
+    transition: transform 0.3s ease;
+}
+
+.movie-item:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #353535;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.movie-item img {
+    border-radius: 1em;
+    width: 100%;
+}
+
+/*__________________Página de Trending__________________*/
+.movies-trending {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.movies-trending .movie-item {
+    margin-bottom: 3em;
+}
+
+/*__________________Página de Proximos Lançamentos__________________*/
+.movies-upcoming {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.movies-upcoming .movie-item {
+    margin-bottom: 3em;
+}
+
+/*__________________Página de Filmes Melhor Classificados__________________*/
+.movies-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.movies-top .movie-item {
+    margin-bottom: 3em;
+}
+
+/*__________________Página de Detalhes__________________*/
+.parent-detalhes {
+    margin: auto;
+    padding: 3em;
+    display: flex;
+    width: fit-content;
+    color: #353535;
+    font-family: Arial, Helvetica, sans-serif;
+    border: #353535 0.3em solid;
+    border-radius: 3em;
+}
+
+.imagem-detalhes {
+    height: 35em;
+    margin-right: 3em;
+}
+
+.imagem-detalhes img {
+    height: 100%;
+    border-radius: 1em;
+}
+
+.title-filme {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.texto-detalhes {
+    width: 30em;
+    font-size: 1.5em;
+}
+
+.info-detalhes {
+    display: flex;
+    font-size: 1.2em;
+}
+
+.info-detalhes p {
+    margin-right: 1.2em;
+}
+
+/*__________________Página de Pesquisa__________________*/
+.search-results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.search-results .movie-item {
+    margin-bottom: 3em;
+}
+
+/*__________________Página de Todos os Filmes__________________*/
+.all-movies {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.all-movies .movie-item {
+    margin-bottom: 3em;
+}
+
+.sort-parent {
+    display: flex;
+}
+
+.genre-filter {
+    margin-left: 2em;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    background: none;
+    border: none;
+    background-color: #1BA857;
+    color: #E7C2DD;
+    border-radius: 0.6em;
+}
+
+.genre-filter:hover {
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    background-color: #147f43;
+    color: white;
+}
+
+.genre-filter option {
+    color: white;
+}
+
+.sorting-filter {
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.sorting-filter button {
+    background: none;
+    border: none;
+    background-color: #1BA857;
+    color: #E7C2DD;
+    border-radius: 0.6em;
+    font-size: 1.5em;
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+}
+
+.sorting-filter button:hover {
+    transition: 0.2s ease-in;
+    background-color: #147f43;
+    color: white;
+}
+
+.pagination-info {
+    margin: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-info button {
+    background: none;
+    border: none;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #1BA857;
+    color: #E7C2DD;
+    font-size: 2em;
+    border-radius: 5em;
+}
+
+.current-page {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 1.5em;
+}
+
+.total-pages {
+    margin-left: 0.5em;
+    font-size: 1.5em;
+}
+
